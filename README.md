@@ -43,8 +43,8 @@ Can you find the largest possible k?
 
 ```sh
 Compulsory (1p)  done
-Homework (2p)    //working on it
-Bonus (3)      ?
+Homework (2p)    done
+Bonus (2)        //working on it
 ```
 
 
