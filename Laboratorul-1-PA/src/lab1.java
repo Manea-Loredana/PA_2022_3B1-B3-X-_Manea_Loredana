@@ -39,7 +39,8 @@ public class Lab1 {
             b=sum;
 
         }
-//        Compute the sum of the digits in the result obtained in the previous step. This is the new result. While the new result has more than one digit, continue to sum the digits of the result.
+//        Compute the sum of the digits in the result obtained in the previous step. This is the new result.
+//        While the new result has more than one digit, continue to sum the digits of the result.
 //Display on the screen the message: "Willy-nilly, this semester I will learn " + languages[result].
         System.out.println(b);
         System.out.println("Willy-nilly, this semester I will learn " + c[b]);
@@ -57,7 +58,8 @@ public class Lab1 {
         }
 
         Lab1 app = new Lab1();
-//Let n, p be two integers and C1,...,Cm a set of letters (the alphabet), all given as a command line arguments. Validate the arguments!
+//Let n, p be two integers and C1,...,Cm a set of letters (the alphabet),
+// all given as a command line arguments. Validate the arguments!
         int n = Integer.parseInt(args[0]);
         int p = Integer.parseInt(args[1]);
         int m = args.length - 2;
@@ -86,7 +88,7 @@ public class Lab1 {
                 {
                     A[i][j]=1;
                 } else
-                A[i][j]=0;
+                   A[i][j]=0;
 
         }
         }
@@ -97,7 +99,8 @@ public class Lab1 {
     }
 
 
-    //Create an array of n strings (called words), each word containing exactly p characters from the given alphabet.
+    //Create an array of n strings (called words), each word containing
+    // exactly p characters from the given alphabet.
         private String createRandomWord ( int len, char[] alphabet){
             StringBuilder word = new StringBuilder();
             Random rand = new Random();
@@ -108,7 +111,7 @@ public class Lab1 {
             return word.toString();
         }
 
-
+    //Two words are neighbors if they have a common letter
     static String  Neighbors(String s1, String s2) {
         String result="NO";
         Set<Character> set1 = new HashSet<>();
@@ -125,7 +128,6 @@ public class Lab1 {
         }
         return result;
     }
-//
 
 
 
@@ -133,8 +135,21 @@ public class Lab1 {
 
 
 
+//    Implement an efficient algorithm that determines, if possible, a subset of words W1,W2,...,Wk
+//    (from the ones that you have generated) such that k ≥ 3 and Wi and Wi+1 are neighbors, for all
+//    i in [1..k], where Wk+1=W1.
+//    Can you find the largest possible k?
      void bonus() {
-   //Do stuff
+
+//it s possible to find the subset
+   //  int k=0;
+   //for(int i=0,i<n-1,i++) // n-1  because if k=n
+   // if(if(Objects.equals(Neighbors(w[i], w[i+1]), "YES"))
+   //K++;
+   //  while (K>=3)
+   //  if(W[1]==W[K+1]
+     //
+
       }
 
 
