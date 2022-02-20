@@ -1,3 +1,6 @@
+
+//Manea Loredana
+
 import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.IntStream;
@@ -11,9 +14,9 @@ public class Lab1 {
     }
 
      void compulsory() {
- ///afisare hello world
+         // Hello world! print
         System.out.println("Hello world!");
-        //partea a 2a
+        //second step
         String[] c = {"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"};
 //        Generate a random integer n: int n = (int) (Math.random() * 1_000_000);
         int n = (int) (Math.random() * 1_000_000);
@@ -40,6 +43,9 @@ public class Lab1 {
 //Display on the screen the message: "Willy-nilly, this semester I will learn " + languages[result].
         System.out.println(b);
         System.out.println("Willy-nilly, this semester I will learn " + c[b]);
+
+//9
+//Willy-nilly, this semester I will learn Java
     }
 
     void homework(String[] args) {
@@ -59,18 +65,29 @@ public class Lab1 {
         for(int i=0; i<m; i++) {
             alphabet[i] = args[i+2].charAt(0);
         }
+        String[] c= new String[n];
+        for(int i=0; i<n ;i++){
+            c[i]=app.createRandomWord(p, alphabet);
+            System.out.println(c[i]);
+
+        }
+//        String word=app.createRandomWord(p, alphabet);
 
 
 //Display on the screen the generated array.
-        IntStream.range(0, n).mapToObj(i -> app.createRandomWord(p, alphabet)).forEach(System.out::println);
+
 
 //Two words are neighbors if they have a common letter.
 //Create a boolean n x n matrix, representing the adjacency relation of the words.
+        int[][] A = new int[n][n];
+        for(int i =0 ; i<n ;i++) {
+            for (int j = 0; j < n; j++){
+                if(twoStrings(c[i], c[j],  p))
+                A[i][j]=0;
+            else
+                A[i][j]=1;
 
-
-
-
-
+        }}
 
     }
 
@@ -92,10 +109,9 @@ public class Lab1 {
     // function to return true if strings have
     // common substring and no if strings have
     // no common substring
-    static boolean twoStrings(String s1, String s2, int p)
-    {
+    static boolean twoStrings(String s1, String s2, int p) {
         // vector for storing character occurrences
-        boolean v[]=new boolean[p];
+        boolean[] v =new boolean[p];
         Arrays.fill(v,false);
 
         // increment vector index for every
@@ -111,6 +127,9 @@ public class Lab1 {
         return false;
     }
 //
+
+
+
 
 
 
