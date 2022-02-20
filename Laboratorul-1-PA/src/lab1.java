@@ -1,9 +1,14 @@
+import java.util.Random;
+
 public class Lab1 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Lab1 lab1 = new Lab1();
         lab1.compulsory();
+        lab1.homework() ;
+
     }
-    void compulsory() {
+
+     void compulsory() {
  ///afisare hello world
         System.out.println("Hello world!");
         //partea a 2a
@@ -37,9 +42,31 @@ public class Lab1 {
     }
 
     void homework() {
-//Do stuff
+
+
+        Lab1 app = new Lab1();
+        char[] alphabet = {'A', 'C', 'G', 'T'};
+        String word = app.createRandomWord(7, alphabet);
+        System.out.println(word);
     }
-    void bonus() {
-//Do stuff
-    }
+        private String createRandomWord ( int len, char[] alphabet){
+            StringBuilder word = new StringBuilder();
+            Random rand = new Random();
+            for (int i = 0; i < len; i++) {
+                int k = rand.nextInt(alphabet.length);
+                word.append(alphabet[k]);
+            }
+            return word.toString();
+        }
+
+
+
+
+
+
+     void bonus() {
+   //Do stuff
+      }
+
+
 }
