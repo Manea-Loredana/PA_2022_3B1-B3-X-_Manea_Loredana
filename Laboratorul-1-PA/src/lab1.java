@@ -3,7 +3,7 @@
 
 import java.util.Arrays;
 import java.util.Random;
-import java.util.stream.IntStream;
+
 
 public class Lab1 {
     public static void main(String[] args) {
@@ -88,11 +88,11 @@ public class Lab1 {
                 A[i][j]=1;
 
         }}
+//Display this data structure on the screen.
+        System.out.println(Arrays.deepToString(A));
+
 
     }
-
-
-
 
 
     //Create an array of n strings (called words), each word containing exactly p characters from the given alphabet.
