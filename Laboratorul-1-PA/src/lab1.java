@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.IntStream;
 
@@ -42,7 +43,7 @@ public class Lab1 {
     }
 
     void homework(String[] args) {
-
+// Launch the application from the command line, for example: java Lab1 100 7 A C G T.
         if (args.length < 3) {
             System.out.println(
                     "Usage: number, number, one or more characters");
@@ -50,7 +51,7 @@ public class Lab1 {
         }
 
         Lab1 app = new Lab1();
-
+//Let n, p be two integers and C1,...,Cm a set of letters (the alphabet), all given as a command line arguments. Validate the arguments!
         int n = Integer.parseInt(args[0]);
         int p = Integer.parseInt(args[1]);
         int m = args.length - 2;
@@ -60,9 +61,24 @@ public class Lab1 {
         }
 
 
+//Display on the screen the generated array.
         IntStream.range(0, n).mapToObj(i -> app.createRandomWord(p, alphabet)).forEach(System.out::println);
 
+//Two words are neighbors if they have a common letter.
+//Create a boolean n x n matrix, representing the adjacency relation of the words.
+
+
+
+
+
+
     }
+
+
+
+
+
+    //Create an array of n strings (called words), each word containing exactly p characters from the given alphabet.
         private String createRandomWord ( int len, char[] alphabet){
             StringBuilder word = new StringBuilder();
             Random rand = new Random();
@@ -73,7 +89,28 @@ public class Lab1 {
             return word.toString();
         }
 
+    // function to return true if strings have
+    // common substring and no if strings have
+    // no common substring
+    static boolean twoStrings(String s1, String s2, int p)
+    {
+        // vector for storing character occurrences
+        boolean v[]=new boolean[p];
+        Arrays.fill(v,false);
 
+        // increment vector index for every
+        // character of str1
+        for (int i = 0; i < s1.length(); i++)
+            v[s1.charAt(i) - 'a'] = true;
+
+        // checking common substring of str2 in str1
+        for (int i = 0; i < s2.length(); i++)
+            if (v[s2.charAt(i) - 'a'])
+                return true;
+
+        return false;
+    }
+//
 
 
 
