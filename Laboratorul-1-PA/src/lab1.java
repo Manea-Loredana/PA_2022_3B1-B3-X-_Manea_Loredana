@@ -1,8 +1,7 @@
 
 //Manea Loredana
 
-import java.util.Arrays;
-import java.util.Random;
+import java.util.*;
 
 
 public class Lab1 {
@@ -10,6 +9,7 @@ public class Lab1 {
         Lab1 lab1 = new Lab1();
         lab1.compulsory();
         lab1.homework(args) ;
+        lab1.bonus();
 
     }
 
@@ -82,12 +82,14 @@ public class Lab1 {
         int[][] A = new int[n][n];
         for(int i =0 ; i<n ;i++) {
             for (int j = 0; j < n; j++){
-                if(twoStrings(c[i], c[j],  p))
+                if(Objects.equals(Neighbors(c[i], c[j]), "YES")) ////
+                {
+                    A[i][j]=1;
+                } else
                 A[i][j]=0;
-            else
-                A[i][j]=1;
 
-        }}
+        }
+        }
 //Display this data structure on the screen.
         System.out.println(Arrays.deepToString(A));
 
@@ -106,25 +108,22 @@ public class Lab1 {
             return word.toString();
         }
 
-    // function to return true if strings have
-    // common substring and no if strings have
-    // no common substring
-    static boolean twoStrings(String s1, String s2, int p) {
-        // vector for storing character occurrences
-        boolean[] v =new boolean[p];
-        Arrays.fill(v,false);
 
-        // increment vector index for every
-        // character of str1
-        for (int i = 0; i < s1.length(); i++)
-            v[s1.charAt(i) - 'a'] = true;
+    static String  Neighbors(String s1, String s2) {
+        String result="NO";
+        Set<Character> set1 = new HashSet<>();
 
-        // checking common substring of str2 in str1
-        for (int i = 0; i < s2.length(); i++)
-            if (v[s2.charAt(i) - 'a'])
-                return true;
+        for (char s : s1.toCharArray()){
+            set1.add(s);
+        }
 
-        return false;
+        for(int i=0;i<s2.length();i++){
+            if(set1.contains(s2.charAt(i))){
+                result = "YES";
+                break;
+            }
+        }
+        return result;
     }
 //
 
