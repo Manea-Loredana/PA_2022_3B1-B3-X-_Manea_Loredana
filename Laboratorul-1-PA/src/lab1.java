@@ -1,10 +1,11 @@
 import java.util.Random;
+import java.util.stream.IntStream;
 
 public class Lab1 {
     public static void main(String[] args) {
         Lab1 lab1 = new Lab1();
         lab1.compulsory();
-        lab1.homework() ;
+        lab1.homework(args) ;
 
     }
 
@@ -23,8 +24,7 @@ public class Lab1 {
         int prod1 = n * 3;
         int sum1 = prod1 + 0b10101;
         int sum2 = sum1 + 0xFF;
-        int prod2 = sum2 * 6;
-        int b = prod2;
+         int b = sum2 * 6;
         while (b > 9)
         { int sum =0 ;
             while (b != 0)
@@ -41,13 +41,27 @@ public class Lab1 {
         System.out.println("Willy-nilly, this semester I will learn " + c[b]);
     }
 
-    void homework() {
+    void homework(String[] args) {
 
+        if (args.length < 3) {
+            System.out.println(
+                    "Usage: number, number, one or more characters");
+            System.exit(-1);
+        }
 
         Lab1 app = new Lab1();
-        char[] alphabet = {'A', 'C', 'G', 'T'};
-        String word = app.createRandomWord(7, alphabet);
-        System.out.println(word);
+
+        int n = Integer.parseInt(args[0]);
+        int p = Integer.parseInt(args[1]);
+        int m = args.length - 2;
+        char[] alphabet = new char[m];
+        for(int i=0; i<m; i++) {
+            alphabet[i] = args[i+2].charAt(0);
+        }
+
+
+        IntStream.range(0, n).mapToObj(i -> app.createRandomWord(p, alphabet)).forEach(System.out::println);
+
     }
         private String createRandomWord ( int len, char[] alphabet){
             StringBuilder word = new StringBuilder();
