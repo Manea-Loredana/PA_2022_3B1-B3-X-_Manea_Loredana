@@ -1,9 +1,10 @@
-
-public class Main  {
-
-    public static void main(String[] args) {
-
-        //afisare hello world
+public class Lab1 {
+    public static void main(String args[]) {
+        Lab1 lab1 = new Lab1();
+        lab1.compulsory();
+    }
+    void compulsory() {
+ ///afisare hello world
         System.out.println("Hello world!");
         //partea a 2a
         String[] c = {"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"};
@@ -35,7 +36,10 @@ public class Main  {
         System.out.println("Willy-nilly, this semester I will learn " + c[b]);
     }
 
+    void homework() {
+//Do stuff
+    }
+    void bonus() {
+//Do stuff
+    }
 }
-
-
-
