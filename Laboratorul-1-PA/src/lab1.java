@@ -10,6 +10,12 @@ public class Lab1 {
         lab1.compulsory();
         lab1.homework(args) ;
         lab1.bonus();
+        long startTime = System.nanoTime();
+        long endTime = System.nanoTime();
+        long totalTime = endTime - startTime;
+        System.out.println("Time in nanoseconds: " + totalTime);
+
+
 
     }
 
@@ -81,20 +87,22 @@ public class Lab1 {
 
 //Two words are neighbors if they have a common letter.
 //Create a boolean n x n matrix, representing the adjacency relation of the words.
-        int[][] A = new int[n][n];
-        for(int i =0 ; i<n ;i++) {
-            for (int j = 0; j < n; j++){
-                if(Objects.equals(Neighbors(c[i], c[j]), "YES")) ////
-                {
-                    A[i][j]=1;
-                } else
-                   A[i][j]=0;
 
-        }
-        }
+        if(n < 30000 ) {
+            long[][] A = new long[n][n];
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                    if (Objects.equals(Neighbors(c[i], c[j]), "YES")) ////
+                    {
+                        A[i][j] = 1;
+                    } else
+                        A[i][j] = 0;
+
+                }
+            }
 //Display this data structure on the screen.
-        System.out.println(Arrays.deepToString(A));
-
+            System.out.println(Arrays.deepToString(A));
+        }
 
     }
 
@@ -141,11 +149,11 @@ public class Lab1 {
 //    Can you find the largest possible k?
      void bonus() {
 
-//it s possible to find the subset
-   //  int k=0;
+    //it s possible to find the subset
+    // int k=0;
    //for(int i=0,i<n-1,i++) // n-1  because if k=n
-   // if(if(Objects.equals(Neighbors(w[i], w[i+1]), "YES"))
-   //K++;
+   // if(if(Objects.equals(Neighbors(w[i], w[i+1]), "YES")){
+   // K++;}
    //  while (K>=3)
    //  if(W[1]==W[K+1]
      //
