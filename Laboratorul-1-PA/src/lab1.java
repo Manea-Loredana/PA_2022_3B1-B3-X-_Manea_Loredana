@@ -101,7 +101,7 @@ public class Lab1 {
 
     //Create an array of n strings (called words), each word containing
     // exactly p characters from the given alphabet.
-        private String createRandomWord ( int len, char[] alphabet){
+    private String createRandomWord ( int len, char[] alphabet){
             StringBuilder word = new StringBuilder();
             Random rand = new Random();
             for (int i = 0; i < len; i++) {
@@ -114,14 +114,14 @@ public class Lab1 {
     //Two words are neighbors if they have a common letter
     static String  Neighbors(String s1, String s2) {
         String result="NO";
-        Set<Character> set1 = new HashSet<>();
-
-        for (char s : s1.toCharArray()){
+        Set<Character> set1 = new HashSet<>(); //	It is used to construct a default HashSet
+  //Set contains unique elements only
+        for (char s : s1.toCharArray()){     // converts this string into character array and put them in to a set
             set1.add(s);
         }
 
         for(int i=0;i<s2.length();i++){
-            if(set1.contains(s2.charAt(i))){
+            if(set1.contains(s2.charAt(i))){ //The contains() method checks whether a string contains a sequence of characters. (return true or false)
                 result = "YES";
                 break;
             }
