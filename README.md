@@ -44,8 +44,7 @@ Can you find the largest possible k?
 ```sh
 Compulsory (1p)  done
 Homework (2p)    done
-Bonus (2)        //working on it  -deci am facut o parte afiseaza primul K cu acele conditii -ar trebui sa il mai 
-                 //optimizez si sa il fac sa continue sa caute si dupa ce gaseste primul k si dupa sa compare 
+Bonus (2)        OK
 ```
 
 
