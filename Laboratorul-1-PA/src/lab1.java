@@ -112,13 +112,28 @@ public class Lab1 {
             k++;
         }
 
-        if(Objects.equals(w[1], w[k + 1]) && k>=3){
+        if(Objects.equals(w[1], w[k + 1]) && k>=3){ // DOESN'T WORK WHEN ALL WORDS ARE Neighbors BECAUSE W[K+1] DOESN'T EXIST
 
-            System.out.println(k);
+            System.out.println("k is :" + k);
 
             break;
 
-        }}
+        }
+        /*if all words are Neighbors we need to find the largest subset between two equals words ,and k it will be the distance between them,
+          I need to make cases !!!!
+
+         */
+//    Implement an efficient algorithm that determines, if possible, a subset of words W1,W2,...,Wk
+//    (from the ones that you have generated) such that k ≥ 3 and Wi and Wi+1 are neighbors, for all
+//    i in [1..k], where Wk+1=W1.
+//    Can you find the largest possible k?
+
+
+            //it s possible to find the subset
+
+
+
+        }
 
 
 
@@ -157,13 +172,7 @@ public class Lab1 {
         return result;
 
 
-//    Implement an efficient algorithm that determines, if possible, a subset of words W1,W2,...,Wk
-//    (from the ones that you have generated) such that k ≥ 3 and Wi and Wi+1 are neighbors, for all
-//    i in [1..k], where Wk+1=W1.
-//    Can you find the largest possible k?
 
-
-        //it s possible to find the subset
 
 
     }
