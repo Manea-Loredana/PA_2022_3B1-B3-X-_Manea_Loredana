@@ -1,15 +1,11 @@
-
-//Manea Loredana
-
 import java.util.*;
-
+//Manea Loredana
 
 public class Lab1 {
     public static void main(String[] args) {
         Lab1 lab1 = new Lab1();
         lab1.compulsory();
         lab1.homework(args);
-//        lab1.bonus();
         long startTime = System.nanoTime();
         long endTime = System.nanoTime();
         long totalTime = endTime - startTime;
@@ -23,13 +19,8 @@ public class Lab1 {
         System.out.println("Hello world!");
         //second step
         String[] c = {"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"};
-//        Generate a random integer n: int n = (int) (Math.random() * 1_000_000);
         int n = (int) (Math.random() * 1_000_000);
 //        Compute the result obtained after performing the following calculations:
-//  multiply n by 3;
-//  add the binary number 10101 to the result;
-//  add the hexadecimal number FF to the result;
-//  multiply the result by 6;
         int prod1 = n * 3;
         int sum1 = prod1 + 0b10101;
         int sum2 = sum1 + 0xFF;
@@ -77,7 +68,6 @@ public class Lab1 {
             System.out.println(c[i]);
 
         }
-//        String word=app.createRandomWord(p, alphabet);
 
 
 //Display on the screen the generated array.
@@ -87,26 +77,26 @@ public class Lab1 {
 //Create a boolean n x n matrix, representing the adjacency relation of the words.
 
         if (n < 30000) {
-            long[][] A = new long[n][n];
+            long[][] matrix = new long[n][n];
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
-                    if (Objects.equals(Neighbors(c[i], c[j]), "YES")) ////
+                    if (Objects.equals(neighbors(c[i], c[j]), "YES")) ////
                     {
-                        A[i][j] = 1;
+                        matrix[i][j] = 1;
                     } else
-                        A[i][j] = 0;
+                        matrix[i][j] = 0;
 
                 }
             }
 //Display this data structure on the screen.
-            System.out.println(Arrays.deepToString(A));
+            System.out.println(Arrays.deepToString(matrix));
         }
 ///BONUS
         int k=0;
         String[] w= new String[n];
 
         for(int i = 0; i < n-3 ;i++) {// n-1  because if k=n
-        if(Objects.equals(Neighbors(c[i], c[i+1]), "YES")){
+        if(Objects.equals(neighbors(c[i], c[i+1]), "YES")){
             w[i]=c[i];
 
             k++;
@@ -155,7 +145,7 @@ public class Lab1 {
     }
 
     //Two words are neighbors if they have a common letter
-    static String Neighbors(String s1, String s2) {
+    static String neighbors(String s1, String s2) {
         String result = "NO";
         Set<Character> set1 = new HashSet<>(); //	It is used to construct a default HashSet
         //Set contains unique elements only
