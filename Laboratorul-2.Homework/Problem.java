@@ -35,7 +35,7 @@ public class Problem {
         for(int i=0;i<getEvents().length;++i){
             sb.append(getEvents()[i].toString()).append(" ");
         }
-        sb.append(" ");//pentru ultima linie afisata
+        sb.append(" ");
         for(int i=0;i<getRooms().length;++i){
             sb.append(getRooms()[i].toString()).append(" ");
         }
