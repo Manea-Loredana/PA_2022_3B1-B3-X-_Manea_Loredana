@@ -8,8 +8,6 @@ public abstract class Room {
         this.cap=cap;
     }
 
-
-
     public void setCap(int cap) {this.cap = cap;}
     public int getCap(){return cap;}
     public void setName(String name) {

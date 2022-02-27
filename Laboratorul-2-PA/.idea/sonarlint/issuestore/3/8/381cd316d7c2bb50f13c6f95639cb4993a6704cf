@@ -1,8 +1,0 @@
-
-f
-java:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(ÜÑã
-_
-java:S4201 "IRemove this unnecessary null check; "instanceof" returns false for nulls.(‡Ú³Í
-V	java:S125*"<This block of commented-out lines of code should be removed.(òß¿•üÿÿÿÿ
-0
-java:S1220""Move this file to a named package.

@@ -4,6 +4,7 @@
     private int capacity;
     private int start;
     private int end;
+    //constructor
     public Event() { }
 
     public Event(String name, int capacity, int start, int end) {
@@ -39,6 +40,7 @@
         return name;
     }
      @Override
+     // Indicates whether some other object is "equal to" this one.
      public boolean equals(Object obj) {
          if (obj == null || !(obj instanceof Event)) {
              return false;
@@ -47,12 +49,20 @@
          return name.equals(other.name);
      }
      @Override
+     //my way (I make it to look like in example) and also use getters
      public String toString() {
          return getName()+"( " + "size= " + getCapacity()+","+" start="
                  +getStartTime()+", "+"end=" +getEndTime()+")";
      }
-
-
-
-}
+     //alt+Ins way to creat toString
+//     @Override
+//     public String toString() {
+//         return "Event{" +
+//                 "name='" + name + '\'' +
+//                 ", capacity=" + capacity +
+//                 ", start=" + start +
+//                 ", end=" + end +
+//                 '}';
+//     }
+ }
 
