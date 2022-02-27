@@ -1,3 +1,3 @@
 public enum RoomType {
-    LectureHall, ComputerLab
+    LectureHall, ComputerLab;
 }

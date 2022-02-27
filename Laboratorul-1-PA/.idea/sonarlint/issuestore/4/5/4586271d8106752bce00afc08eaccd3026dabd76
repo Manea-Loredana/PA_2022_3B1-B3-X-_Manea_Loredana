@@ -1,0 +1,15 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(šşÿŠ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚ŞÏ¥ıÿÿÿÿ
+K
+java:S2140")Use "java.util.Random.nextInt()" instead.(Š“’½úÿÿÿÿ8´Ø”ó/
+S	java:S106("9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(”Æ£÷
+h
+java:S3776/"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(´±†¦
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(ÆÀûı
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(–çè
+S	java:S106\"9Replace this use of System.out or System.err by a logger.(§Ø€İÿÿÿÿÿ
+U	java:S106k"9Replace this use of System.out or System.err by a logger.(ê¿–ı8Îïı“ó/
+0
+java:S1220""Move this file to a named package.

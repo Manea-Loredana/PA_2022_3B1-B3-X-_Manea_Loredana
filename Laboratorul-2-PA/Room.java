@@ -38,5 +38,12 @@ public class Room {
     public String toString() {
         return getName() + " (" +" cap="+getCap()+")";
     }
-
+//    @Override
+//    public String toString() {
+//        return "Room{" +
+//                "name='" + name + '\'' +
+//                ", type=" + type +
+//                ", cap=" + cap +
+//                '}';
+//    }
 }

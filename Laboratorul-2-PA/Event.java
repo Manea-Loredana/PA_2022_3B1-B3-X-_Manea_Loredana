@@ -8,14 +8,11 @@
 
     public Event(String name, int capacity, int start, int end) {
         this.name = name;
-
         this.capacity= capacity;
-
         this.start = start;
-
         this.end = end;
     }
-
+//set and get for name,capacity,start , end
     public void setName(String name) {
         this.name = name;
     }
@@ -41,6 +38,14 @@
     public String getName() {
         return name;
     }
+     @Override
+     public boolean equals(Object obj) {
+         if (obj == null || !(obj instanceof Event)) {
+             return false;
+         }
+         Event other = (Event) obj;
+         return name.equals(other.name);
+     }
      @Override
      public String toString() {
          return getName()+"( " + "size= " + getCapacity()+","+" start="

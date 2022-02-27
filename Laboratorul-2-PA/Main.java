@@ -1,6 +1,10 @@
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
+
+
+
         Event c1 = new Event();
+        //
         c1.setName("C1");
         c1.setCapacity(100);
         c1.setStartTime(8);
@@ -22,7 +26,7 @@ public class Main {
 
         System.out.println("Rooms:"+r1+","+r2+","+r3+","+r4);
 
-
+        System.out.println();
 
     }
 }
