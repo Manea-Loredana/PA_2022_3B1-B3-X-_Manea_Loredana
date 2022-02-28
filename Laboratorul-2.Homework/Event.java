@@ -8,7 +8,6 @@ public class Event {
     private int end;
 
 
-
     public Event() {
     }
 

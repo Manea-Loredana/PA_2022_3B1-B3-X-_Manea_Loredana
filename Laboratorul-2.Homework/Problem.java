@@ -33,13 +33,11 @@ public class Problem {
 
     @Override
     public String toString() {
-        return "Problem{" +
-                "events=" + Arrays.toString(events) +
-                ", rooms=" + Arrays.toString(rooms) +
-                '}';
+        return "Problem :" +'\n'+
+                "Events=" + Arrays.toString(events) + '\n'+
+                "Rooms=" + Arrays.toString(rooms)
+                ;
     }
-
-
 
 
 }

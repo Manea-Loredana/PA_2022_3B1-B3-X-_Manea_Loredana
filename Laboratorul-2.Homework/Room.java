@@ -30,8 +30,6 @@ public abstract class Room {
     }
 
     // … getters and setters
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -42,10 +40,6 @@ public abstract class Room {
     @Override
     public int hashCode() {
         return Objects.hash(getName());
-    }
-    @Override
-    public String toString() {
-        return getName() + " (" + " cap=" + getCap() + ")";
     }
 
 }
