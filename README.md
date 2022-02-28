@@ -6,7 +6,7 @@
 ## Laboratorul 2
 ```sh
 Compulsory (1p)  done
-Homework (2p)    continue
+Homework (2p)    progress 75% done
 Bonus (2)        continue
 ```
 1. ✨Compulsory (1p)
