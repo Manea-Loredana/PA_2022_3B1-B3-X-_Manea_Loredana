@@ -62,7 +62,7 @@ public class Room {
     @Override
     //my way (I make it to look like in example) and also use getters
     public String toString() {
-        return getName() + " (" + " cap=" + getCap() + ")";
+        return getName() + " (" + " cap=" + getCap() + "," + getType() +")";
     }
     //alt+Ins way to creat toString
 //    @Override

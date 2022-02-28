@@ -8,7 +8,7 @@ public class Main {
         c1.setStartTime(8);
         c1.setEndTime(10);
 
-        Event c2 = new Event("C2", 100, 8, 10);
+        Event c2 = new Event("C2", 100, 10, 12);
         Event l1 = new Event("L1", 30, 8, 10);
         Event l2 = new Event("L2", 30, 8, 10);
         Event l3 = new Event("L3", 30, 10, 12);
