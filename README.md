@@ -6,7 +6,7 @@
 ## Laboratorul 2
 ```sh
 Compulsory (1p)  done
-Homework (2p)    continue
+Homework (2p)    progress 75% done
 Bonus (2)        continue
 ```
 1. ✨Compulsory (1p)
@@ -23,7 +23,7 @@ Use the IDE features for code generation, for example (in NetBeans) press Alt+In
 - Instead of using an enum, create dedicated classes for courses and labs. Room will become abstract. The course room may have an additional property indicating if there is a video projector, and the lab room may indicate the operating system of its computers.
 - Create a class to describe the solution.
 - Implement a simple algorithm for creating a feasible solution to the problem, "trying" to minimize the number of used rooms.
-Write doc comments in your source code and generate the class documentation using javadoc.
+- Write doc comments in your source code and generate the class documentation using javadoc.
 
 3. ✨Bonus (2p)
 - Use the time package in order to describe the start and the end time of the events.
