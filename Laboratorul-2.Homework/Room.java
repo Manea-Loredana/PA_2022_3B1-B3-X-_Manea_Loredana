@@ -43,7 +43,7 @@ public abstract class Room {
     public int hashCode() {
         return Objects.hash(getName());
     }
-
+    @Override
     public String toString() {
         return getName() + " (" + " cap=" + getCap() + ")";
     }

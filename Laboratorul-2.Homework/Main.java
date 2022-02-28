@@ -1,27 +1,20 @@
 public class Main {
     public static void main(String[] args) {
 
+       Event[] event =new Event[5];
+        event[0]=new Event("C1", 100, 8, 10);
+        event[1]=new Event("C2", 100, 10, 12);
+        event[2]=new Event("L1", 30, 8, 10);
+        event[3]= new Event("L2", 30, 8, 10);
+        event[4]=new Event("L3", 30, 10, 12);
 
-        Event c1 = new Event();
-        //
-        c1.setName("C1");
-        c1.setCapacity(100);
-        c1.setStartTime(8);
-        c1.setEndTime(10);
+        Room[] room = new Room[3];
+        room[0] = new LectureHall("309",100,true);
+        room[1] = new ComputerLab("404",30,"Linux");
+        room[2] = new ComputerLab("403",30,"Windows");
 
-        Event c2 = new Event("C2", 100, 8, 10);
-        Event l1 = new Event("L1", 30, 8, 10);
-        Event l2 = new Event("L2", 30, 8, 10);
-        Event l3 = new Event("L3", 30, 10, 12);
-
-
-        System.out.println("Events:" + c1 + "," + c2 + "," + l1 + "," + l2 + "," + l3);
-
-        Room[] room = new Room[2];
-        room[0] = new LectureHall();
-        room[1] = new ComputerLab();
-
-        System.out.println();
+     Problem pb=new Problem(event,room);
+     System.out.println(pb);
 
     }
 }

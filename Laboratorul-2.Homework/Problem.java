@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Problem {
     private Event[] events;
     private Room[] rooms;
@@ -31,17 +33,13 @@ public class Problem {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("   ");//space for first line
-        for (int i = 0; i < getEvents().length; ++i) {
-            sb.append(getEvents()[i].toString()).append(" ");
-        }
-        sb.append(" ");
-        for (int i = 0; i < getRooms().length; ++i) {
-            sb.append(getRooms()[i].toString()).append(" ");
-        }
-        return sb.toString();
+        return "Problem{" +
+                "events=" + Arrays.toString(events) +
+                ", rooms=" + Arrays.toString(rooms) +
+                '}';
     }
+
+
 
 
 }
