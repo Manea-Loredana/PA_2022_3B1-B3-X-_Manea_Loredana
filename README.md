@@ -3,11 +3,24 @@
 
 ![N|Solid](https://lh3.googleusercontent.com/-RyBB3bk5wIU/VbKcgTgAtvI/AAAAAAAAAo4/kzoZdpBFsI8/s400/txpsspolhjjxxprskstgkxxlvklgutxl.png)
 ✨Magic ✨- 
+## Laboratorul 3
+```sh
+Compulsory (1p)  
+Homework (2p)   
+Bonus (2)        
+```
+1. ✨Compulsory (1p)
+2. ✨ Homework (2p)
+3. ✨Bonus (2p)
+
+
+
+
 ## Laboratorul 2
 ```sh
 Compulsory (1p)  done
-Homework (2p)    progress 75% done
-Bonus (2)        continue
+Homework (2p)    done
+Bonus (2)        i will do this another time
 ```
 1. ✨Compulsory (1p)
 - Create an object-oriented model of the problem. You should have (at least) the following classes: Event, Room.
