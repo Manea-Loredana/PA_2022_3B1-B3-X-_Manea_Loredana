@@ -16,8 +16,9 @@ public class Main {
 
         Problem pb = new Problem(event, room);
         System.out.println(pb);
-
-
+        Solution solve = new Solution();
+        solve.computeUsedRooms(pb);
+        System.out.println(solve);
 
     }
 }
