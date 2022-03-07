@@ -1,2 +1,5 @@
-public class Switch {
+public class Switch extends Node {
+
+
+
 }
