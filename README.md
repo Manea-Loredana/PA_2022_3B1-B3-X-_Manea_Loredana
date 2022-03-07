@@ -5,7 +5,7 @@
 ✨Magic ✨- 
 ## Laboratorul 3
 ```sh
-Compulsory (1p)  continue
+Compulsory (1p)  done
 Homework (2p)   continue
 Bonus (2)        continue
 ```
