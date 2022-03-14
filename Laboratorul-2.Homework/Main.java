@@ -12,7 +12,7 @@ public class Main {
         room[0] = new LectureHall("309", 100, true);
         room[1] = new ComputerLab("404", 30, "Linux");
         room[2] = new ComputerLab("403", 30, "Windows");
-        room[3] = new ComputerLab("405", 30, "Windows");
+        room[3] = new ComputerLab("405", 30, "IOS");
 
         Problem pb = new Problem(event, room);
         System.out.println(pb);
