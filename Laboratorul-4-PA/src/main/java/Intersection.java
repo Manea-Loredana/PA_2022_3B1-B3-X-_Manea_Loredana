@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Intersection implements Comparable<Intersection> {
     String intersectionName;
 

@@ -1,6 +1,0 @@
-
-\
-java:S1126"AReplace this if-then-else statement by a single return statement.(»ÉÑ€ÿÿÿÿÿ
-m	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ
-W
-java:S4973"<Strings and Boxed types should be compared using "equals()".(»ÉÑ€ÿÿÿÿÿ
