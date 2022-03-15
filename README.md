@@ -3,18 +3,20 @@
 
 ![N|Solid](https://lh3.googleusercontent.com/-RyBB3bk5wIU/VbKcgTgAtvI/AAAAAAAAAo4/kzoZdpBFsI8/s400/txpsspolhjjxxprskstgkxxlvklgutxl.png)
 ✨Magic ✨- 
+## Laboratorul 4
+```sh
+Compulsory (1p)  done
+Homework (2p)   /
+Bonus (2)        /
+```
+
 ## Laboratorul 3
 ```sh
 Compulsory (1p)  done
-Homework (2p)   continue
-Bonus (2)        continue
+Homework (2p)   /
+Bonus (2)        i will do this
 ```
-1. ✨Compulsory (1p)
-- Create an object-oriented model of the problem. You should have at least the following classes Network, Node, Computer, Router, Switch. The natural ordering of the nodes is given by their names.
-- Create the interfaces Identifiable and Storage. The classes above must implement these interfaces accordingly.
-- The Network class will contain a List of nodes.
-- Create and print all the nodes in the network (without the time costs).
-3. ✨ Homework (2p)
+2. ✨ Homework (2p)
 - Each node will contain a Map representing the time costs. Create and print the complete network in the example.
 - Create a default method in the interface Storage, that is able to return the storage capacity in other units of storage (megabyte, kilobyte, byte).
 - In the Network class, create a method to display the nodes that are identifiable, sorted by their addresses.
