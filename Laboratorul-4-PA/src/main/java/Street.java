@@ -1,6 +1,6 @@
 public class Street implements Comparable<Street> {
-    String streetName;
-    int streetLength;
+    private String streetName;
+    private int streetLength;
 
     public Street(String streetName, int streetLength) {
         this.streetName = streetName;

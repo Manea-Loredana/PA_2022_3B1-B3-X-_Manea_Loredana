@@ -1,5 +1,5 @@
 public class Intersection implements Comparable<Intersection> {
-    String intersectionName;
+  private   String intersectionName;
 
     public Intersection(String intersectionName) {
         this.intersectionName = intersectionName;
