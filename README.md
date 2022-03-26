@@ -3,6 +3,21 @@
 
 ![N|Solid](https://lh3.googleusercontent.com/-RyBB3bk5wIU/VbKcgTgAtvI/AAAAAAAAAo4/kzoZdpBFsI8/s400/txpsspolhjjxxprskstgkxxlvklgutxl.png)
 ✨Magic ✨- 
+## Laboratorul6
+```sh
+Compulsory (1p)  /
+Homework (2p)   /
+Bonus (2)        /
+```
+
+
+## Laboratorul 5
+```sh
+Compulsory (1p)  /
+Homework (2p)   /
+Bonus (2)        /
+```
+
 ## Laboratorul 4
 ```sh
 Compulsory (1p)  done
