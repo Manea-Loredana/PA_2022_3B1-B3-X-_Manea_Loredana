@@ -13,7 +13,7 @@ Bonus (2)        /
 
 ## Laboratorul 5
 ```sh
-Compulsory (1p)  /
+Compulsory (1p)  try
 Homework (2p)   /
 Bonus (2)        /
 ```
