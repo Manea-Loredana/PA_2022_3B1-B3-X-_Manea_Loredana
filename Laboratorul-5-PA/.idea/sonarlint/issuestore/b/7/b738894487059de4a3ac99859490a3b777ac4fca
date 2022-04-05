@@ -1,0 +1,9 @@
+
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‰¾ƒ†8ºáêÜü/
+\
+java:S1118":Add a private constructor to hide the implicit public one.(„”«ßşÿÿÿÿ8ëÿçÜü/
+X
+java:S1854";Remove this useless assignment to local variable "catalog".(‚øù”8ôÿçÜü/
+I
+java:S1481",Remove this unused "catalog" local variable.(‚øù”8÷ÿçÜü/
