@@ -1,6 +1,6 @@
 public class Token {
-    int letter;
-    int value;
+    private int letter;
+    private int value;
 
     //int letter reprezinta numarul de ordine a literei din alfabetul englez
     public Token(int letter, int value) {
@@ -12,12 +12,12 @@ public class Token {
         return letter;
     }
 
-    public int getValue() {
-        return value;
-    }
-
     public void setLetter(int letter) {
         this.letter = letter;
+    }
+
+    public int getValue() {
+        return value;
     }
 
     public void setValue(int value) {
